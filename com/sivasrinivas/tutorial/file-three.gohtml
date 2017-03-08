@@ -1,0 +1,15 @@
+*** File Three ***
+
+{{range $key, $val := .SagesMap}}
+{{$key}} - {{$val}} - {{ft $val}} - {{$val | ft | uc}}
+{{end}}
+
+
+{{range .SagesSlice}}
+{{.}}
+{{end}}
+
+
+{{range $index, $val := .SagesSlice}}
+{{$index}} . {{uc $val}}
+{{end}}

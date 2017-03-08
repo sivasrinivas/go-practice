@@ -14,6 +14,6 @@ func f(name string) {
 func main() {
 	go f("routine")
 	time.Hour
-	time.Sleep(time.Second*3)
+	time.Sleep(time.Second * 3)
 	fmt.Println("Done")
 }

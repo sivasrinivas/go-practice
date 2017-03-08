@@ -1,9 +1,9 @@
 package main
 
 import (
-	"hash/crc32"
-	"fmt"
 	"crypto/sha256"
+	"fmt"
+	"hash/crc32"
 )
 
 func main() {

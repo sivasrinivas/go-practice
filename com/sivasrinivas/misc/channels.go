@@ -5,13 +5,13 @@ import (
 	"time"
 )
 
-func ping(c chan string){
+func ping(c chan string) {
 	for i := 0; ; i++ {
 		c <- "ping" + i
 	}
 }
 
-func pong(c chan string){
+func pong(c chan string) {
 	for i := 0; ; i++ {
 		c <- "pong" + i
 	}
@@ -19,9 +19,9 @@ func pong(c chan string){
 
 func print(c chan string) {
 	for {
-		msg := <- c
+		msg := <-c
 		fmt.Println(msg)
-		time.Sleep(time.Second*1)
+		time.Sleep(time.Second * 1)
 	}
 }
 

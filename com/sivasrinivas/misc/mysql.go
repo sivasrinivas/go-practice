@@ -2,9 +2,10 @@ package main
 
 import (
 	"database/sql"
-	_ "github.com/go-sql-driver/mysql"
 	"fmt"
 	"net/http"
+
+	_ "github.com/go-sql-driver/mysql"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {

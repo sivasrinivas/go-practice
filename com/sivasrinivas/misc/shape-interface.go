@@ -25,8 +25,8 @@ type Shaper interface {
 }
 
 func main() {
-	
-	r := Rectangle{length:5, width:3}
+
+	r := Rectangle{length: 5, width: 3}
 	s := Square{5}
 	var sh Shaper
 

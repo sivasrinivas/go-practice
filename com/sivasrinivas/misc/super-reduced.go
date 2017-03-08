@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"bytes"
+	"fmt"
 )
 
 func main() {
@@ -11,11 +11,11 @@ func main() {
 	//line := scan.Text()
 	line := "ab"
 	var buf bytes.Buffer
-	i:=0
-	for i< len(line) {
-		if i + 1<len(line) {
-			if line[i] == line[i + 1] {
-				i+=2
+	i := 0
+	for i < len(line) {
+		if i+1 < len(line) {
+			if line[i] == line[i+1] {
+				i += 2
 			} else {
 				buf.WriteByte(line[i])
 				i++
