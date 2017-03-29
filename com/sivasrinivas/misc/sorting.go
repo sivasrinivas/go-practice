@@ -16,12 +16,12 @@ func (b ByName) Len() int {
 	return len(b)
 }
 
-func (this ByName) Less(i, j int) bool {
-	return this[i].Name < this[j].Name
+func (b ByName) Less(i, j int) bool {
+	return b[i].Name < b[j].Name
 }
 
-func (this ByName) Swap(i, j int) {
-	this[i], this[j] = this[j], this[i]
+func (b ByName) Swap(i, j int) {
+	b[i], b[j] = b[j], b[i]
 }
 
 func main() {
